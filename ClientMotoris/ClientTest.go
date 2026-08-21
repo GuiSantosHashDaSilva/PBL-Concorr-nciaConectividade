@@ -10,6 +10,9 @@ func main() {
 	if err != nil {
 		fmt.Println("mandando 3 mísseis para sua casa")
 	}
-	conn.Write([]byte("miau\n"))
+
+	for x :=0; x<5; x++{
+		conn.Write([]byte("miau\n"))
+	}
 
 }
