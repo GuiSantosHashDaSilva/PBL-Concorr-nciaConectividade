@@ -1,7 +1,7 @@
 package model
 
 type Motorista struct {
-	id            int
+	idmot         int
 	nome          string
 	caronasfeitas []Carona
 }
