@@ -13,6 +13,7 @@ func main() {
 		return
 	}
 	defer ln.Close()
+	fmt.Println("Pai ta on")
 	for {
 		conn, err := ln.Accept()
 		if err != nil {
@@ -26,7 +27,9 @@ func main() {
 
 func handleConnection(conn net.Conn) {
 	for {
-		fmt.Println("só castelo")
+
+		fmt.Println("Esperando de quebras")
+
 		//aqui bota a lógica q fica no server
 		message, err := bufio.NewReader(conn).ReadString('\n')
 		if err != nil {
